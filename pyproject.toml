@@ -1,0 +1,20 @@
+[project]
+name = "agentic-playground"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ollivar", email = "33588460+ollivar@users.noreply.github.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "langfuse>=4.17.0",
+    "pydantic-ai>=2.55.0",
+]
+
+[project.scripts]
+agentic-playground = "agentic_playground:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
